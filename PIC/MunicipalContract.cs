@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PIC
 {
-    internal class MunicipalContractForm
+    internal class MunicipalContract
     {
         int Number { get; set; }
         DateTime ConclusionDate { get; set; }
@@ -14,9 +14,7 @@ namespace PIC
         Organization Performer { get; set; }
         Organization Customer { get; set; }
 
-        List<string> contracts;
-
-        public MunicipalContractForm(int number, DateTime start, DateTime end, Organization performer, Organization customer)
+        public MunicipalContract(int number, DateTime start, DateTime end, Organization performer, Organization customer)
         {
             if (IsDataCorrect(number, start, end, performer, customer))
             {
@@ -25,7 +23,6 @@ namespace PIC
                 EffectiveDate = end;
                 Performer = performer;
                 Customer = customer;
-                contracts = new List<string>();
             }
         }
 

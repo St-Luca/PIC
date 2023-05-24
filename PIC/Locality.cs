@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace PIC
 {
-    internal class Organization
+    internal class Locality
     {
-        int Id;
-
     }
 }

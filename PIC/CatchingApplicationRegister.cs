@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace PIC
 {
-    internal class Organization
+    internal class CatchingApplicationRegister
     {
         int Id;
-
+        List<CatchingApplication> applications;
     }
 }

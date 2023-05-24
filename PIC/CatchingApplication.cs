@@ -8,5 +8,29 @@ namespace PIC
 {
     internal class CatchingApplication
     {
+        int Id { get; set; }
+        DateTime RegistrationDate { get; set; }
+        User User { get; set; }
+        Locality LocalityOfCatching { get; set; }
+        Locality LocalityOfLiving { get; set; }
+        Animal Animal { get; set; }
+        Organization OrderedOrganization { get; set; }
+        List<string> AnimalDescription { get; set; }
+        Organization JobOrganization { get; set; }
+        DateTime Urgency { get; set; }
+
+        public CatchingApplication(int id, DateTime registrationDate, User user, Locality localityOfCatching, Locality localityOfLiving, 
+                                   Animal animal, Organization orderedOrganization, DateTime urgency)
+        {
+            Id = id;
+            RegistrationDate = registrationDate;
+            User = user;
+            LocalityOfCatching = localityOfCatching;
+            LocalityOfLiving = localityOfLiving;
+            Animal = animal;
+            AnimalDescription = Animal.GetDescription();
+            OrderedOrganization = orderedOrganization;
+            Urgency = urgency;
+        }
     }
 }

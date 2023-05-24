@@ -8,5 +8,37 @@ namespace PIC
 {
     internal class CapturedAnimalRegister
     {
+        int Id { get; set; }
+        List<string> Parameters { get; set; }
+        string Coloring { get; set; }
+        string Ears { get; set; }
+        string Tail { get; set; }
+        string SpecialSigns { get; set; }
+        int IdTag { get; set; }
+        int ChipNumber { get; set; }
+        Locality Locality { get; set; }
+        int CaptureId { get; set; }
+
+        public CapturedAnimalRegister(int id, List<string> parameters, string coloring, string ears, string tail, string specialSigns, int idTag, int chipNumber, Locality locality, int captureId)
+        {
+            if (IsDataCorrect(id, parameters, coloring, ears, tail, specialSigns, idTag, chipNumber, locality, captureId))
+            {
+                Id = id;
+                Parameters = parameters;
+                Coloring = coloring;
+                Ears = ears;
+                Tail = tail;
+                SpecialSigns = specialSigns;
+                IdTag = idTag;
+                ChipNumber = chipNumber;
+                Locality = locality;
+                CaptureId = captureId;
+            }
+        }
+
+        private bool IsDataCorrect(int id, List<string> parameters, string coloring, string ears, string tail, string specialSigns, int idTag, int chipNumber, Locality locality, int captureId)
+        {
+            return true;
+        }
     }
 }

@@ -8,6 +8,15 @@ namespace PIC
 {
     internal class AuthDBAdapter
     {
-        public AuthDBAdapter() { }
+        internal Dictionary<string, string> userData { get; set; }
+        public AuthDBAdapter(string login, int passwordHash) 
+        {
+            userData = new Dictionary<string, string>();  //     
+        }
+
+        public AuthDBAdapter(string login, string passwordHash)
+        {
+
+        }
     }
 }

@@ -8,7 +8,6 @@ namespace PIC
 {
     internal class AuthController
     {
-        Dictionary<string, string> userData;
         public int GetHash(string password)
         {
             return 3 * password.GetHashCode() + 42;
@@ -16,8 +15,9 @@ namespace PIC
 
         public Dictionary<string, string> GetUserData(string login, int passwordHash)
         {
-            userData = new Dictionary<string, string>();/////
-            return userData;
+            AuthDBAdapter authDBAdapter = new AuthDBAdapter(login, passwordHash);
+
+            return authDBAdapter.userData; //null ot not null
         }
 
         public User CreateUser(Dictionary<string, string> data)

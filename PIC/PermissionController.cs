@@ -9,9 +9,9 @@ namespace PIC
     internal class PermissionController
     {
 
-        public void GivePermissions(User user)
+        public static void GivePermissions(User user)/////////
         {
-
+            user.PermissionCode = 0;
         }
     }
 }

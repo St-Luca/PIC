@@ -8,9 +8,12 @@ namespace PIC
 {
     internal class User
     {
-        int Id;
-        public string Login;
-        public string Password;
+        int Id { get; set; }
+        string Login { get; set; }
+        string Password { get; set; }
+        public int PermissionCode { get; set; }
+
+
 
     }
 }

@@ -17,7 +17,7 @@ namespace PIC
         {
             AuthDBAdapter authDBAdapter = new AuthDBAdapter(login, passwordHash);
 
-            return authDBAdapter.userData; //null ot not null
+            return authDBAdapter.GetUserData(login, passwordHash); //null ot not null
         }
 
         public User CreateUser(Dictionary<string, string> data)

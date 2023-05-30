@@ -18,5 +18,15 @@ namespace PIC
         {
 
         }
+
+        public static bool CheckUserInDb(string login, int passwordHash)
+        {//связь с бд
+            return true;
+        }
+
+        public Dictionary<string, string> GetUserData(string login, int passwordHash)
+        {
+            return userData;
+        }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PIC
 {
-    internal class ReprotMaker
+    internal class ReportMaker
     {
     }
 }

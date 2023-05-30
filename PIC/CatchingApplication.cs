@@ -19,6 +19,7 @@ namespace PIC
         Organization JobOrganization { get; set; }
         DateTime Urgency { get; set; }
 
+        public CatchingApplication() { }
         public CatchingApplication(int id, DateTime registrationDate, User user, Locality localityOfCatching, Locality localityOfLiving, 
                                    Animal animal, Organization orderedOrganization, DateTime urgency)
         {

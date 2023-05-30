@@ -19,9 +19,12 @@ namespace PIC
             InitializeComponent();
         }
 
-        private bool CanAddCatchingApplication()
+        private void addButton_Click(object sender, EventArgs e)
         {
-            return User.PermissionCode == 1;
+            //считать данные из элементов в лист строк и распарсить???
+            //обернуть создание в трай кэтч? обработать эксепшн создания
+            CatchingApplication ca = new CatchingApplication();
+            bool allowed = CatchingApplicationController.CanAddCatchingApplication(User.PermissionCode);
         }
     }
 }

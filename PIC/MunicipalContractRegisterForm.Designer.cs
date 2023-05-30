@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "MunicipalContractRegisterForm";
+            addButton = new Button();
+            SuspendLayout();
+            // 
+            // addButton
+            // 
+            addButton.Location = new Point(495, 172);
+            addButton.Name = "addButton";
+            addButton.Size = new Size(94, 29);
+            addButton.TabIndex = 0;
+            addButton.Text = "button1";
+            addButton.UseVisualStyleBackColor = true;
+            addButton.Click += addButton_Click;
+            // 
+            // MunicipalContractRegisterForm
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(addButton);
+            Name = "MunicipalContractRegisterForm";
+            Text = "MunicipalContractRegisterForm";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button addButton;
     }
 }

@@ -14,6 +14,7 @@ namespace PIC
         Organization Performer { get; set; }
         Organization Customer { get; set; }
 
+        public MunicipalContract() { } //потом удалить, нужен для первичной инфраструктуры
         public MunicipalContract(int number, DateTime start, DateTime end, Organization performer, Organization customer)
         {
             if (IsDataCorrect(number, start, end, performer, customer))

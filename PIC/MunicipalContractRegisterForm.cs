@@ -23,5 +23,13 @@ namespace PIC
         {
             return User.PermissionCode == 1;
         }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+            //считать данные из элементов в лист строк и распарсить???
+            //обернуть создание в трай кэтч? обработать эксепшн создания
+            MunicipalContract ca = new MunicipalContract();
+            bool allowed = MunicipalContractController.CanAddMunicipalContract(User.PermissionCode);
+        }
     }
 }

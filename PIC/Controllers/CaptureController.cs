@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PIC.CapAnimal;
 
 namespace PIC
 {
@@ -18,12 +19,12 @@ namespace PIC
             //connection with db and parsing fields
         }
 
-        public void DeleteCapture()
+        public void DeleteCapture(Capture delCapture)
         {
 
         }
 
-        public void ChangeCapture()
+        public void ChangeCapture(Capture changeCapture, CapturedAnimalCard captAnimal)
         {
 
         }

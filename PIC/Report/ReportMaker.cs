@@ -19,9 +19,9 @@ namespace PIC
             Locality = locality;
         }
 
-        internal void MakeReport(DateTime start, DateTime end, Locality locality)
+        internal void MakeReport(DateTime start, DateTime end, Locality locality, string filepath)
         {
-
+            //drop to excel
         }
     }
 }

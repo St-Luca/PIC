@@ -13,7 +13,7 @@ namespace PIC
             return true;
         }
 
-        public void AddOrganization(Organization organization)
+        public static void AddOrganization(Organization organization)
         {
             //connection with db and parsing fields
         }

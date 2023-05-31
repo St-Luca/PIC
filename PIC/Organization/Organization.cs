@@ -8,8 +8,8 @@ namespace PIC
 {
     internal class Organization
     {
-        int Id { get; set; }
-        string OrgName { get; set; }
+        internal int Id { get; set; }
+        internal string OrgName { get; set; }
         string INN { get; set; }
         string KPP { get; set; }
         string OrgAddress { get; set; }

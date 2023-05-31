@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PIC
 {
-    internal class CapturedAnimalRegister
+    internal class CapturedAnimalCard
     {
         int Id { get; set; }
         List<string> Parameters { get; set; }
@@ -19,7 +19,7 @@ namespace PIC
         Locality Locality { get; set; }
         int CaptureId { get; set; }
 
-        public CapturedAnimalRegister(int id, List<string> parameters, string coloring, string ears, string tail, string specialSigns, int idTag, int chipNumber, Locality locality, int captureId)
+        public void CapturedAnimalRegister(int id, List<string> parameters, string coloring, string ears, string tail, string specialSigns, int idTag, int chipNumber, Locality locality, int captureId)
         {
             if (IsDataCorrect(id, parameters, coloring, ears, tail, specialSigns, idTag, chipNumber, locality, captureId))
             {

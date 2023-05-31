@@ -7,29 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PIC.CatchingApp;
+using PIC.Controllers;
 
 namespace PIC
 {
-    public partial class MunicipalContractRegisterForm : Form
+    public partial class CatchingApplicationRegisterForm : Form
     {
-        MunicipalContractRegister Register { get; set; }
+        CatchingApplicationRegister Register { get; set; }
         User User { get; set; }
-        public MunicipalContractRegisterForm()
+        public CatchingApplicationRegisterForm()
         {
             InitializeComponent();
-        }
-
-        private bool CanAddMunicipalContract()
-        {
-            return User.PermissionCode == 1;
         }
 
         private void addButton_Click(object sender, EventArgs e)
         {
             //считать данные из элементов в лист строк и распарсить???
             //обернуть создание в трай кэтч? обработать эксепшн создания
-            MunicipalContract ca = new MunicipalContract();
-            bool allowed = MunicipalContractController.CanAddMunicipalContract(User.PermissionCode);
+            CatchingApplication ca = new CatchingApplication();
+            bool allowed = CatchingApplicationController.CanAddCatchingApplication(User.PermissionCode);
         }
     }
 }

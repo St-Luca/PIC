@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace PIC
 {
-    internal class CaptureRegister
+    internal class OrganizationRegister
     {
+        int Id;
+        List<Organization> organizations;
     }
 }

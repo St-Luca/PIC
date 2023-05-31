@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PIC.CatchingApp;
 
 namespace PIC
 {
@@ -17,6 +18,16 @@ namespace PIC
         public void AddCatchingApplication(CatchingApplication ca)
         {
             //connection with db and parsing fields
+        }
+
+        public void DeleteCatchingApplication(CatchingApplication ca)
+        {
+
+        }
+
+        public void ChangeCatchingApplication(CatchingApplication ca)
+        {
+
         }
     }
 }

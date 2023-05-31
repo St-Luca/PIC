@@ -27,7 +27,7 @@ namespace PIC
                 OrgAddress = orgAddress;
                 OrgType = orgType;
                 OrgAttribute = orgAttribute;
-            }           
+            }
         }
 
         private bool IsDataCorrect(int id, string orgName, string iNN, string kPP, string orgAddress, string orgType, string orgAttribute)

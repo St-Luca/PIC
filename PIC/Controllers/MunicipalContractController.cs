@@ -18,5 +18,15 @@ namespace PIC
         {
             //connection with db and parsing fields
         }
+
+        public void DeleteMunicipalContract(MunicipalContract mc)
+        {
+
+        }
+
+        public void ChangeMunicipalContract(MunicipalContract mc)
+        {
+
+        }
     }
 }

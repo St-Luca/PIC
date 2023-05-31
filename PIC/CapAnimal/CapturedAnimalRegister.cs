@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace PIC
 {
-    internal class LocalityReport
+    internal class CapturedAnimalRegister
     {
+        int Id;
+        List<CapturedAnimalCard> animalCards; 
     }
 }

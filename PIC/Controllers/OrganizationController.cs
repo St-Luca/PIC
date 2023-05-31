@@ -17,5 +17,15 @@ namespace PIC
         {
             //connection with db and parsing fields
         }
+
+        public void DeleteOrganization(Organization organization)
+        {
+
+        }
+
+        public void ChangeOrganization(Organization organization)
+        {
+
+        }
     }
 }

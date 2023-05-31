@@ -10,8 +10,13 @@ namespace PIC
     {
 
         public static void GivePermissions(User user)/////////
-        {
+        {//connection to db ?
             user.PermissionCode = 0;
+        }
+
+        public static bool IsPermitted(User user)
+        {
+            return user.PermissionCode==1 || user.PermissionCode ==2;
         }
     }
 }

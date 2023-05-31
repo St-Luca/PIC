@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             addButton = new Button();
+            LoadCatAppRegButton = new Button();
             SuspendLayout();
             // 
             // addButton
@@ -41,11 +42,22 @@
             addButton.UseVisualStyleBackColor = true;
             addButton.Click += addButton_Click;
             // 
+            // LoadCatAppRegButton
+            // 
+            LoadCatAppRegButton.Location = new Point(333, 326);
+            LoadCatAppRegButton.Name = "LoadCatAppRegButton";
+            LoadCatAppRegButton.Size = new Size(94, 29);
+            LoadCatAppRegButton.TabIndex = 1;
+            LoadCatAppRegButton.Text = "button1";
+            LoadCatAppRegButton.UseVisualStyleBackColor = true;
+            LoadCatAppRegButton.Click += LoadCatAppRegButton_Click;
+            // 
             // CatchingApplicationRegisterForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(LoadCatAppRegButton);
             Controls.Add(addButton);
             Name = "CatchingApplicationRegisterForm";
             Text = "CatchingApplicationRegisterForm";
@@ -55,5 +67,6 @@
         #endregion
 
         private Button addButton;
+        private Button LoadCatAppRegButton;
     }
 }

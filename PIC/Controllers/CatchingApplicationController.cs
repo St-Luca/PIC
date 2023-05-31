@@ -15,7 +15,7 @@ namespace PIC
             return true;
         }
 
-        public void AddCatchingApplication(CatchingApplication ca)
+        public static void AddCatchingApplication(CatchingApplication ca)
         {
             //connection with db and parsing fields
         }

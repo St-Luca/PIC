@@ -8,8 +8,8 @@ namespace PIC
 {
     internal class CatchingApplication
     {
-        int Id { get; set; }
-        DateTime RegistrationDate { get; set; }
+        internal int Id { get; set; }
+        internal DateTime RegistrationDate { get; set; }
         User User { get; set; }
         Locality LocalityOfCatching { get; set; }
         Locality LocalityOfLiving { get; set; }

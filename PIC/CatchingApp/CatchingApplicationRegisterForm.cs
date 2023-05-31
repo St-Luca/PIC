@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PIC.CatchingApp;
-using PIC.Controllers;
 
 namespace PIC
 {

@@ -14,9 +14,10 @@ namespace PIC
             return true;
         }
 
-        public void AddMunicipalContract(MunicipalContract mc)
+        public static void AddMunicipalContract(MunicipalContract mc)
         {
             //connection with db and parsing fields
+
         }
 
         public void DeleteMunicipalContract(MunicipalContract mc)

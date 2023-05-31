@@ -8,8 +8,8 @@ namespace PIC
 {
     internal class MunicipalContract
     {
-        int Number { get; set; }
-        DateTime ConclusionDate { get; set; }
+        internal int Number { get; set; }
+        internal DateTime ConclusionDate { get; set; }
         DateTime EffectiveDate { get; set; }
         Organization Performer { get; set; }
         Organization Customer { get; set; }

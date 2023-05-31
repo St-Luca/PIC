@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             addButton = new Button();
+            LoadMunContractRegisterButton = new Button();
             SuspendLayout();
             // 
             // addButton
@@ -41,11 +42,22 @@
             addButton.UseVisualStyleBackColor = true;
             addButton.Click += addButton_Click;
             // 
+            // LoadMunContractRegisterButton
+            // 
+            LoadMunContractRegisterButton.Location = new Point(468, 265);
+            LoadMunContractRegisterButton.Name = "LoadMunContractRegisterButton";
+            LoadMunContractRegisterButton.Size = new Size(94, 29);
+            LoadMunContractRegisterButton.TabIndex = 1;
+            LoadMunContractRegisterButton.Text = "button1";
+            LoadMunContractRegisterButton.UseVisualStyleBackColor = true;
+            LoadMunContractRegisterButton.Click += LoadMunContractRegisterButton_Click;
+            // 
             // MunicipalContractRegisterForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(LoadMunContractRegisterButton);
             Controls.Add(addButton);
             Name = "MunicipalContractRegisterForm";
             Text = "MunicipalContractRegisterForm";
@@ -55,5 +67,6 @@
         #endregion
 
         private Button addButton;
+        private Button LoadMunContractRegisterButton;
     }
 }

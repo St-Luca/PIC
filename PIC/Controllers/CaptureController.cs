@@ -14,7 +14,7 @@ namespace PIC
             return true;
         }
 
-        public void AddCapture(CapturedAnimalCard captAnimal)
+        public static void AddCapture(CapturedAnimalCard captAnimal)
         {
             //connection with db and parsing fields
         }

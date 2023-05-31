@@ -28,12 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "CaptureForm";
+            LoadCaptureRegisterButton = new Button();
+            AddCaptureButton = new Button();
+            SuspendLayout();
+            // 
+            // LoadCaptureRegisterButton
+            // 
+            LoadCaptureRegisterButton.Location = new Point(504, 211);
+            LoadCaptureRegisterButton.Name = "LoadCaptureRegisterButton";
+            LoadCaptureRegisterButton.Size = new Size(94, 29);
+            LoadCaptureRegisterButton.TabIndex = 0;
+            LoadCaptureRegisterButton.Text = "button1";
+            LoadCaptureRegisterButton.UseVisualStyleBackColor = true;
+            LoadCaptureRegisterButton.Click += LoadCaptureRegisterButton_Click;
+            // 
+            // AddCaptureButton
+            // 
+            AddCaptureButton.Location = new Point(515, 103);
+            AddCaptureButton.Name = "AddCaptureButton";
+            AddCaptureButton.Size = new Size(94, 29);
+            AddCaptureButton.TabIndex = 1;
+            AddCaptureButton.Text = "button1";
+            AddCaptureButton.UseVisualStyleBackColor = true;
+            AddCaptureButton.Click += AddCaptureButton_Click;
+            // 
+            // CaptureForm
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(AddCaptureButton);
+            Controls.Add(LoadCaptureRegisterButton);
+            Name = "CaptureForm";
+            Text = "CaptureForm";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button LoadCaptureRegisterButton;
+        private Button AddCaptureButton;
     }
 }

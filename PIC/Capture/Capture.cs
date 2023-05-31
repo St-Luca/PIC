@@ -20,6 +20,8 @@ namespace PIC
         public CatchingApplication CatApp { get; set;}
         public MunicipalContract Contract { get; set;}
 
+        public Capture() { }
+
         public Capture(int id, int number, int countOfDogs, int countOfCats, int general, Organization organization, DateTime captureDate, string target, CatchingApplication catApp, MunicipalContract contract)
         {
             if (IsDataCorrect(id, number, countOfDogs, countOfCats, general, organization, captureDate, target, catApp, contract))

@@ -21,24 +21,16 @@ namespace PIC
 
         public void CapturedAnimalRegister(int id, List<string> parameters, string coloring, string ears, string tail, string specialSigns, int idTag, int chipNumber, Locality locality, int captureId)
         {
-            if (IsDataCorrect(id, parameters, coloring, ears, tail, specialSigns, idTag, chipNumber, locality, captureId))
-            {
-                Id = id;
-                Parameters = parameters;
-                Coloring = coloring;
-                Ears = ears;
-                Tail = tail;
-                SpecialSigns = specialSigns;
-                IdTag = idTag;
-                ChipNumber = chipNumber;
-                Locality = locality;
-                CaptureId = captureId;
-            }
-        }
-
-        private bool IsDataCorrect(int id, List<string> parameters, string coloring, string ears, string tail, string specialSigns, int idTag, int chipNumber, Locality locality, int captureId)
-        {
-            return true;
+            Id = id;
+            Parameters = parameters;
+            Coloring = coloring;
+            Ears = ears;
+            Tail = tail;
+            SpecialSigns = specialSigns;
+            IdTag = idTag;
+            ChipNumber = chipNumber;
+            Locality = locality;
+            CaptureId = captureId;            
         }
     }
 }

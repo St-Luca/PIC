@@ -28,5 +28,10 @@ namespace PIC
         {
 
         }
+
+        private bool IsDataCorrect(CapturedAnimalCard capturedAnimal)
+        {
+            return true;
+        }
     }
 }

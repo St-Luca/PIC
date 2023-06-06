@@ -27,5 +27,10 @@ namespace PIC
         {
 
         }
+
+        private bool IsDataCorrect(Organization organization)
+        {
+            return true;
+        }
     }
 }

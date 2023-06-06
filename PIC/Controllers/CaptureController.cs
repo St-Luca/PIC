@@ -34,6 +34,11 @@ namespace PIC
             return true;
         }
 
+
+        private bool IsDataCorrect(Capture capture)
+        {
+
+        }
         public static void AddCapturedAnimal(CapturedAnimalCard captAnimal)
         {
 

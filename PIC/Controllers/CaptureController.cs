@@ -33,5 +33,10 @@ namespace PIC
         {
             return true;
         }
+
+        public static void AddCapturedAnimal(CapturedAnimalCard captAnimal)
+        {
+
+        }
     }
 }

@@ -14,6 +14,11 @@ namespace PIC
             return true;
         }
 
+        public static bool IsMunContractCorrect(MunicipalContract mc)
+        {
+            return true;
+        }
+
         public static void AddMunicipalContract(MunicipalContract mc)
         {
             //connection with db and parsing fields

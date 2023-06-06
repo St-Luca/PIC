@@ -15,6 +15,11 @@ namespace PIC
             return true;
         }
 
+        public static bool IsCatAppCorrect(CatchingApplication ca)
+        {
+            return true;
+        }
+
         public static void AddCatchingApplication(CatchingApplication ca)
         {
             //connection with db and parsing fields

@@ -38,5 +38,15 @@ namespace PIC.CatchingApp
             applications = finalFilter.OrderBy(c => c.Id).ToList();
             return applications;
         }
+
+        public void DeleteCatchingApplication(CatchingApplication ca)
+        {
+
+        }
+
+        public void ChangeCatchingApplication(CatchingApplication ca)
+        {
+
+        }
     }
 }

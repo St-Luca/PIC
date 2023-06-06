@@ -39,5 +39,20 @@ namespace PIC
             captures = finalFilter.OrderBy(c => c.Id).ToList();
             return captures;
         }
+
+        public static void AddCapturedAnimal(CapturedAnimalCard captAnimal)
+        {
+
+        }
+
+        public void DeleteCapture(Capture delCapture)
+        {
+
+        }
+
+        public void ChangeCapture(Capture changeCapture, CapturedAnimalCard captAnimal)
+        {
+
+        }
     }
 }

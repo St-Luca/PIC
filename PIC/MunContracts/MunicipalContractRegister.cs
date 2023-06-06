@@ -38,5 +38,15 @@ namespace PIC
             contracts = finalFilter.OrderBy(c => c.Number).ToList();
             return contracts;
         }
+
+        public void DeleteMunicipalContract(MunicipalContract mc)
+        {
+
+        }
+
+        public void ChangeMunicipalContract(MunicipalContract mc)
+        {
+
+        }
     }
 }

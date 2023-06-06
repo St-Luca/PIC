@@ -38,5 +38,10 @@ namespace PIC
             organizations = finalFilter.OrderBy(c => c.Id).ToList();
             return organizations;
         }
+
+        public static void AddOrganization(Organization organization)
+        {
+
+        }
     }
 }

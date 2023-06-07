@@ -48,5 +48,10 @@ namespace PIC
         {
 
         }
+
+        public void GetCountOfClosedContracts(DateTime start, DateTime end, Locality city)
+        {
+
+        }
     }
 }

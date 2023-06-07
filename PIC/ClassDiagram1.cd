@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PIC.CapturedAnimalCard">
+    <Position X="4.25" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAEAAAAAAAAAAAAgAgAAAACAAAIACAIBIAAA=</HashCode>
+      <FileName>CapAnimal\CapturedAnimalCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PIC.CapturedAnimalRegister">
+    <Position X="8.25" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>CapAnimal\CapturedAnimalRegister.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PIC.AuthDBAdapter">
+    <Position X="6.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Authentification\AuthDBAdapter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PIC.CaptureApplication">
+    <Position X="8.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAEAAAEgAACEAAAAAAAAAACAJAAAAIAA=</HashCode>
+      <FileName>Capture\CaptureApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PIC.CaptureApplicationRegister">
+    <Position X="10.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAADAAAAAAAAAAAAAAAgAAAAAAAJAEEAAgAAAAAAAAA=</HashCode>
+      <FileName>Capture\CaptureApplicationRegister.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PIC.CatchingApplication">
+    <Position X="14" Y="6.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ACADAAAQAAAAAAAAAABAAAACAQAAAAAAIAABABACAAA=</HashCode>
+      <FileName>CatchingApp\CatchingApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PIC.CatchingApp.CatchingApplicationRegister">
+    <Position X="11.25" Y="5.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAADEAAAAAAAAAAAAACAAAAAAAABAAAAAAAACCAAAAA=</HashCode>
+      <FileName>CatchingApp\CatchingApplicationRegister.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PIC.AuthController">
+    <Position X="4.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAgAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\AuthController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PIC.CaptureController">
+    <Position X="6.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAKAEEAAgABAAAAAAA=</HashCode>
+      <FileName>Controllers\CaptureController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PIC.CapturedAnimalCardController">
+    <Position X="8.25" Y="6.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\CapturedAnimalCardController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PIC.CatchingApplicationController">
+    <Position X="11.5" Y="8" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAABAAAAAAAAACAAAAAAAAAAAAAAAAAACAABAA=</HashCode>
+      <FileName>Controllers\CatchingApplicationController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PIC.MunicipalContractController">
+    <Position X="6.5" Y="8" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAEAAIAAAAIAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Controllers\MunicipalContractController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PIC.OrganizationController">
+    <Position X="9" Y="8" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAGAAAAgAAAAABAQAAAAA=</HashCode>
+      <FileName>Controllers\OrganizationController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PIC.PermissionController">
+    <Position X="4.25" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\PermissionController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PIC.Locality">
+    <Position X="0.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAIAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Locality\Locality.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PIC.MunicipalContract">
+    <Position X="2.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAEAEAAEAAQAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>MunContracts\MunicipalContract.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PIC.MunicipalContractRegister">
+    <Position X="4.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAAAAEAAAAAAAAAAAAAABAAAAAAAAAAAECCA=</HashCode>
+      <FileName>MunContracts\MunicipalContractRegister.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PIC.Organization.OrganizationRegisterForm">
+    <Position X="0.5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAABAAAAACAAAAAAAACAAAACAAABAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Organization\OrganizationRegisterForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PIC.Organization">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACQAAAAAAAAAAAAAEAAAAAgAAKAAAAAAABAACAAAA=</HashCode>
+      <FileName>Organization\Organization.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PIC.ReportMaker">
+    <Position X="6.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAAAAAAAAAAEAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Report\ReportMaker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PIC.Animal">
+    <Position X="0.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PIC.User">
+    <Position X="2.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAACAgAQAAAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

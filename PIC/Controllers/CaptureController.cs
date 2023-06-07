@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PIC.CapAnimal;
 
 namespace PIC
 {
@@ -14,31 +13,26 @@ namespace PIC
             return true;
         }
 
-        public static void AddCapture(CapturedAnimalCard captAnimal)
-        {
-            //connection with db and parsing fields
-        }
-
-        public void DeleteCapture(Capture delCapture)
-        {
-
-        }
-
-        public void ChangeCapture(Capture changeCapture, CapturedAnimalCard captAnimal)
-        {
-
-        }
-
-        private bool IsDataCorrect(CapturedAnimalCard capturedAnimal)
+        public static bool IsCaptureCorrect(CaptureApplication capture)
         {
             return true;
         }
 
+        public static void AddCapture(CaptureApplication capture)
+        {
+            //connection with db and parsing fields
+        }
 
-        private bool IsDataCorrect(Capture capture)
+        public void DeleteCapture(CaptureApplication delCapture)
         {
 
         }
+
+        public void ChangeCapture(CaptureApplication changeCapture, CapturedAnimalCard captAnimal)
+        {
+
+        }
+
         public static void AddCapturedAnimal(CapturedAnimalCard captAnimal)
         {
 

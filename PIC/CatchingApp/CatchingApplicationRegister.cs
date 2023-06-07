@@ -48,5 +48,10 @@ namespace PIC.CatchingApp
         {
 
         }
+
+        public void GetCaptureInfo(DateTime start, DateTime end, Locality city)
+        {
+
+        }
     }
 }

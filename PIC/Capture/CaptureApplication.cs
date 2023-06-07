@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PIC
 {
-    internal class Capture
+    internal class CaptureApplication
     {
         public int Id { get; set;}
         public int Number { get; set;}
@@ -20,9 +20,9 @@ namespace PIC
         public CatchingApplication CatApp { get; set;}
         public MunicipalContract Contract { get; set;}
 
-        public Capture() { }
+        public CaptureApplication() { }
 
-        public Capture(int id, int number, int countOfDogs, int countOfCats, int general, Organization organization, DateTime captureDate, string target, CatchingApplication catApp, MunicipalContract contract)
+        public CaptureApplication(int id, int number, int countOfDogs, int countOfCats, int general, Organization organization, DateTime captureDate, string target, CatchingApplication catApp, MunicipalContract contract)
         {
             if (IsDataCorrect(id, number, countOfDogs, countOfCats, general, organization, captureDate, target, catApp, contract))
             {

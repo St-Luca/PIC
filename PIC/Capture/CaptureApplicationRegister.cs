@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace PIC
 {
-    internal class CaptureRegister
+    internal class CaptureApplicationRegister
     {
         int Id;
-        List<Capture> captures;
+        List<CaptureApplication> captures;
 
-        public List<Capture> GetUserFilter(User user)
+        public List<CaptureApplication> GetUserFilter(User user)
         { //какая то проверка на права юзера и проход по карточкам. Как то привязать к органищациям и ролям
             if (PermissionController.IsPermitted(user))
             {
@@ -21,19 +21,19 @@ namespace PIC
             else return captures;
         }
 
-        public static List<Capture> GetFinalFilter(List<Capture> f1, List<Capture> f2)
+        public static List<CaptureApplication> GetFinalFilter(List<CaptureApplication> f1, List<CaptureApplication> f2)
         {
             return f1.Concat(f2).ToList(); //Финальный список заявок, который увидит пользователь
         }
 
-        public List<Capture> LoadCaptureRegister(Dictionary<string, string> filter, Dictionary<string, string> sort)
+        public List<CaptureApplication> LoadCaptureRegister(Dictionary<string, string> filter, Dictionary<string, string> sort)
         {
             //parsing sort and filter dictionaries to cat app fields?
             captures = captures.Where(c => c.CaptureDate < new DateTime(23 - 10 - 2023)).OrderBy(c => c.Id).ToList();
             return captures;
         }
 
-        public List<Capture> LoadCapureRegister(List<Capture> finalFilter, Dictionary<string, string> sort)
+        public List<CaptureApplication> LoadCapureRegister(List<CaptureApplication> finalFilter, Dictionary<string, string> sort)
         {
             //parsing sort dictionary to cat app fields?
             captures = finalFilter.OrderBy(c => c.Id).ToList();
@@ -45,12 +45,12 @@ namespace PIC
 
         }
 
-        public void DeleteCapture(Capture delCapture)
+        public void DeleteCapture(CaptureApplication delCapture)
         {
 
         }
 
-        public void ChangeCapture(Capture changeCapture, CapturedAnimalCard captAnimal)
+        public void ChangeCapture(CaptureApplication changeCapture, CapturedAnimalCard captAnimal)
         {
 
         }

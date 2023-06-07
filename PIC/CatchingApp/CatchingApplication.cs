@@ -22,26 +22,16 @@ namespace PIC
         public CatchingApplication() { } //потом удалить, нужен для первичной инфраструктуры
         public CatchingApplication(int id, DateTime registrationDate, User user, Locality localityOfCatching, Locality localityOfLiving,
                                    Animal animal, Organization orderedOrganization, DateTime urgency)
-        {
-            if (IsDataCorrect(id, registrationDate, user, localityOfCatching, localityOfLiving,
-                             animal, orderedOrganization, urgency))
-            {
-                Id = id;
-                RegistrationDate = registrationDate;
-                User = user;
-                LocalityOfCatching = localityOfCatching;
-                LocalityOfLiving = localityOfLiving;
-                Animal = animal;
-                AnimalDescription = Animal.GetDescription();
-                OrderedOrganization = orderedOrganization;
-                Urgency = urgency;
-            }
-        }
-
-        private bool IsDataCorrect(int id, DateTime registrationDate, User user, Locality localityOfCatching, Locality localityOfLiving,
-                                   Animal animal, Organization orderedOrganization, DateTime urgency)
-        {
-            return true;
+        { 
+            Id = id;
+            RegistrationDate = registrationDate;
+            User = user;
+            LocalityOfCatching = localityOfCatching;
+            LocalityOfLiving = localityOfLiving;
+            Animal = animal;
+            AnimalDescription = Animal.GetDescription();
+            OrderedOrganization = orderedOrganization;
+            Urgency = urgency;
         }
     }
 }

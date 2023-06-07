@@ -17,19 +17,13 @@ namespace PIC
         public MunicipalContract() { } //потом удалить, нужен для первичной инфраструктуры
         public MunicipalContract(int number, DateTime start, DateTime end, Organization performer, Organization customer)
         {
-            if (IsDataCorrect(number, start, end, performer, customer))
-            {
-                Number = number;
-                ConclusionDate = start;
-                EffectiveDate = end;
-                Performer = performer;
-                Customer = customer;
-            }
-        }
 
-        private bool IsDataCorrect(int number, DateTime start, DateTime end, Organization performer, Organization customer)
-        {
-            return true;
+            Number = number;
+            ConclusionDate = start;
+            EffectiveDate = end;
+            Performer = performer;
+            Customer = customer;
+
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PIC
 {
-    internal class User
+    public class User
     {
         int Id { get; set; }
         string Login { get; set; }

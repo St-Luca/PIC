@@ -22,10 +22,20 @@ namespace PIC
             AuthController authController = new AuthController();
             int passwordHash = authController.GetHash(password);
             Dictionary<string, string> userData = authController.GetUserData(login, passwordHash);
-            // if (passwordHash == 0 ) { } проверка словаря на налл
+            // if (passwordHash == 0 ) { } проверка словаря на налл, т е нет такого юзера
             User user = authController.CreateUser(userData);
 
-            return user;
+            return user; 
+        }
+
+        private void SignInButton_Click(object sender, EventArgs e)
+        {
+            string login = LoginTextBox.Text;
+            string password = PasswordTextBox.Text;
+            User appUser = Authorize(login, password);
+
+            Form1 form1 = new Form1(appUser);
+            form1.ShowDialog();
         }
     }
 }

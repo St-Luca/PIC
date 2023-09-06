@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PIC
 {
-    internal class Organization
+    public class Organization
     {
         internal int Id { get; set; }
         internal string OrgName { get; set; }

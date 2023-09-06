@@ -1,4 +1,4 @@
-﻿namespace PIC.Organization
+﻿namespace PIC
 {
     partial class OrganizationRegisterForm
     {

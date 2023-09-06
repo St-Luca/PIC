@@ -1,4 +1,4 @@
-﻿using PIC.CatchingApp;
+﻿//using PIC.CatchingApp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +14,7 @@ namespace PIC
 {
     public partial class CaptureForm : Form
     {
-        CaptureRegister Register { get; set; }
+        CaptureApplicationRegister Register { get; set; }
         User User { get; set; }
 
         public CaptureForm()
@@ -25,7 +25,7 @@ namespace PIC
         {
             //считать данные из элементов в лист строк и распарсить???
             //обернуть создание в трай кэтч? обработать эксепшн создания
-            Capture capture = new Capture(); //здесь что то придумать с вызовом добавления captAnimalCard
+            CaptureApplication capture = new CaptureApplication(); //здесь что то придумать с вызовом добавления captAnimalCard
             bool allowed = CaptureController.CanMakeCapture(User.PermissionCode);
             if (allowed)
             {
@@ -35,13 +35,13 @@ namespace PIC
 
         private void LoadCaptureRegisterButton_Click(object sender, EventArgs e)
         {
-            CaptureRegister capt = new CaptureRegister();
+            CaptureApplicationRegister capt = new CaptureApplicationRegister();
             Dictionary<string, string> filter = new Dictionary<string, string>(); //здесь как то составляем словарь для фильтрации. Значения брать из элементов формы.
             Dictionary<string, string> sort = new Dictionary<string, string>(); //здесь как то составляем словарь для сортировки. Значения брать из элементов формы.
 
-            List<Capture> f1 = capt.LoadCaptureRegister(filter, sort);
-            List<Capture> f2 = capt.GetUserFilter(User);
-            List<Capture> finalFilter = CaptureRegister.GetFinalFilter(f1, f2);
+            List<CaptureApplication> f1 = capt.LoadCaptureRegister(filter, sort);
+            List<CaptureApplication> f2 = capt.GetUserFilter(User);
+            List<CaptureApplication> finalFilter = CaptureApplicationRegister.GetFinalFilter(f1, f2);
 
             capt.LoadCapureRegister(finalFilter, sort);
             //отображаем на форме этот са

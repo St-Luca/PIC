@@ -38,14 +38,14 @@
   <Class Name="PIC.CatchingApplication">
     <Position X="14" Y="6.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>ACADAAAQAAAAAAAAAABAAAACAQAAAAAAIAABABACAAA=</HashCode>
+      <HashCode>ACADAAAQAAAAAAAAAABAAAACAQAAAAAAIAAAABACAAA=</HashCode>
       <FileName>CatchingApp\CatchingApplication.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PIC.CatchingApp.CatchingApplicationRegister">
+  <Class Name="PIC.CatchingApplicationRegister">
     <Position X="11.25" Y="5.75" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAADEAAAAAAAAAAAAACAAAAAAAABAAAAAAAACCAAAAA=</HashCode>
+      <HashCode>AAADEAAAAAAAAAAAAACBAAAAAAABAAAAAAAACCAAAAA=</HashCode>
       <FileName>CatchingApp\CatchingApplicationRegister.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -59,7 +59,7 @@
   <Class Name="PIC.CaptureController">
     <Position X="6.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAKAEEAAgABAAAAAAA=</HashCode>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAKAEEAAgAAAAAAAAA=</HashCode>
       <FileName>Controllers\CaptureController.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -108,29 +108,22 @@
   <Class Name="PIC.MunicipalContract">
     <Position X="2.25" Y="0.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAEAAAAAAAAAAAAAAEAEAAEAAQAAAAAAAAABAAAAAAA=</HashCode>
+      <HashCode>AAEAAAAAAAAAAAAAAEAEAAEAAQAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MunContracts\MunicipalContract.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PIC.MunicipalContractRegister">
     <Position X="4.25" Y="0.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAADAAAAAAAAEAAAAAAAAAAAAAABAAAAAAAAAAAECCA=</HashCode>
+      <HashCode>AAADAAAAAAAAEAACAAAAAAAAAAABAAAAAAAAAAAECCA=</HashCode>
       <FileName>MunContracts\MunicipalContractRegister.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PIC.Organization.OrganizationRegisterForm">
+  <Class Name="PIC.OrganizationRegisterForm">
     <Position X="0.5" Y="3.75" Width="2" />
     <TypeIdentifier>
-      <HashCode>BAABAAAAACAAAAAAAACAAAACAAABAAAAAAAAAAAAEAA=</HashCode>
+      <HashCode>BAABAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Organization\OrganizationRegisterForm.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="PIC.Organization">
-    <Position X="0.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAACQAAAAAAAAAAAAAEAAAAAgAAKAAAAAAABAACAAAA=</HashCode>
-      <FileName>Organization\Organization.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PIC.ReportMaker">
@@ -152,6 +145,13 @@
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAACAgAQAAAAAAA=</HashCode>
       <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PIC.Organization">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACQAAAAAAAAAAAAAEAAAAAgAAKAAAAAAABAACAAAA=</HashCode>
+      <FileName>Organization\Organization.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

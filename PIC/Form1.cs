@@ -1,12 +1,12 @@
 namespace PIC
 {
-    public partial class Form1 : System.Windows.Forms.Form
+    public partial class MainForm : Form
     {
         private User User { get; set; }
-        public Form1(User user)
+        public MainForm(User user)
         {
             InitializeComponent();
-            User = user;    
+            User = user;
         }
     }
 }

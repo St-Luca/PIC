@@ -1,3 +1,5 @@
+using System.Windows.Forms;
+
 namespace PIC
 {
     public partial class MainForm : Form

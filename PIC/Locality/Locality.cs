@@ -8,8 +8,8 @@ namespace PIC
 {
     internal class Locality
     {
+        int Id { get; set; }
         internal string Region { get; set; }
         internal string City { get; set; }
-        internal string Address { get; set; }
     }
 }

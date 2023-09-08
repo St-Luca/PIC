@@ -33,7 +33,7 @@ namespace PIC
             return captures;
         }
 
-        public List<CaptureApplication> LoadCapureRegister(List<CaptureApplication> finalFilter, Dictionary<string, string> sort)
+        public List<CaptureApplication> LoadCaptureRegister(List<CaptureApplication> finalFilter, Dictionary<string, string> sort)
         {
             //parsing sort dictionary to cat app fields?
             captures = finalFilter.OrderBy(c => c.Id).ToList();

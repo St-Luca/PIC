@@ -43,7 +43,7 @@ namespace PIC
             List<CaptureApplication> f2 = capt.GetUserFilter(User);
             List<CaptureApplication> finalFilter = CaptureApplicationRegister.GetFinalFilter(f1, f2);
 
-            capt.LoadCapureRegister(finalFilter, sort);
+            capt.LoadCaptureRegister(finalFilter, sort);
             //отображаем на форме этот са
         }
 

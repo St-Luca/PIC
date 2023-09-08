@@ -10,11 +10,10 @@ namespace PIC
     internal class CaptureApplication
     {
         public int Id { get; set;}
-        public int Number { get; set;}
         public int CountOfDogs { get; set;}
         public int CountOfCats { get; set; }
         public int General { get; set; }
-        public Organization Organization { get; set; }
+        public Organization Performer { get; set; }
         public DateTime CaptureDate {get; set;}
         public string Target {get; set;}
         public CatchingApplication CatApp { get; set;}
@@ -22,15 +21,16 @@ namespace PIC
 
         public CaptureApplication() { }
 
-        public CaptureApplication(int id, int number, int countOfDogs, int countOfCats, int general, Organization organization, DateTime captureDate, string target, CatchingApplication catApp, MunicipalContract contract)
+        public CaptureApplication(int id, int number, int countOfDogs, int countOfCats, Organization organization, DateTime captureDate, 
+            string target, CatchingApplication catApp, MunicipalContract contract)
         {
-            if (IsDataCorrect(id, number, countOfDogs, countOfCats, general, organization, captureDate, target, catApp, contract))
+            if (IsDataCorrect(id, countOfDogs, countOfCats, organization, captureDate, target, catApp, contract))
             {
-                Number = number;
+                Id = id;
                 CountOfDogs = countOfDogs;
                 CountOfCats = countOfCats;
-                General = general;
-                Organization = organization;
+                General = countOfCats+countOfDogs;
+                Performer = organization;
                 CaptureDate = captureDate;
                 Target = target;
                 CatApp = catApp;
@@ -38,7 +38,7 @@ namespace PIC
             }
         }
 
-        private bool IsDataCorrect(int id, int number, int countOfDogs, int countOfCats, int general, Organization organization, DateTime captureDate, string target, CatchingApplication catApp, MunicipalContract contract)
+        private bool IsDataCorrect(int id, int countOfDogs, int countOfCats, Organization organization, DateTime captureDate, string target, CatchingApplication catApp, MunicipalContract contract)
         {
             return true;
         }

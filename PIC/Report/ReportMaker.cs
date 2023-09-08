@@ -10,13 +10,16 @@ namespace PIC
     {
         DateTime Start { get; set; }
         DateTime End { get; set; }
-        Locality Locality { get; set; }
+        List<Locality> Localities { get; set; }
+        int CountOfCatApp { get; set; }
+        int CountOfAnimal { get; set; }
+        double FinalSum { get; set; }
 
-        internal ReportMaker(DateTime start, DateTime end, Locality locality)
+        internal ReportMaker(DateTime start, DateTime end, List<Locality> locality)
         {
             Start = start;
             End = end;
-            Locality = locality;
+            Localities = locality;
         }
 
         internal void MakeReport(DateTime start, DateTime end, Locality locality, string filepath)

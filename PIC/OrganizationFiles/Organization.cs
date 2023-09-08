@@ -16,6 +16,7 @@ namespace PIC
         string OrgType { get; set; }
         string OrgAttribute { get; set; }
 
+
         public Organization(int id, string orgName, string iNN, string kPP, string orgAddress, string orgType, string orgAttribute)
         {
             Id = id;

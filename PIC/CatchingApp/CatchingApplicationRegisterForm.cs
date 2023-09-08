@@ -15,9 +15,10 @@ namespace PIC
     {
         CatchingApplicationRegister Register { get; set; }
         User User { get; set; }
-        public CatchingApplicationRegisterForm()
+        public CatchingApplicationRegisterForm(User user)
         {
             InitializeComponent();
+            User = user;
         }
 
         private void addButton_Click(object sender, EventArgs e)

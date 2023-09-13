@@ -28,14 +28,14 @@ namespace PIC
         public List<MunicipalContract> LoadMunicipalContractRegister(Dictionary<string, string> filter, Dictionary<string, string> sort)
         {
             //parsing sort and filter dictionaries to cat app fields?
-            contracts = contracts.Where(c => c.ConclusionDate < new DateTime(23 - 10 - 2023)).OrderBy(c => c.Number).ToList();
+            contracts = contracts.Where(c => c.ConclusionDate < new DateTime(23 - 10 - 2023)).OrderBy(c => c.Id).ToList();
             return contracts;
         }
 
         public List<MunicipalContract> LoadMunicipalContractRegister(List<MunicipalContract> finalFilter, Dictionary<string, string> sort)
         {
             //parsing sort dictionary to cat app fields?
-            contracts = finalFilter.OrderBy(c => c.Number).ToList();
+            contracts = finalFilter.OrderBy(c => c.Id).ToList();
             return contracts;
         }
 

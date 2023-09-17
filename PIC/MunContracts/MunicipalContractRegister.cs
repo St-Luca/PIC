@@ -41,7 +41,7 @@ namespace PIC
 
         public void DeleteMunicipalContract(MunicipalContract mc)
         {
-
+            contracts.RemoveAll(x => x.Id == mc.Id);
         }
 
         public void ChangeMunicipalContract(MunicipalContract mc)

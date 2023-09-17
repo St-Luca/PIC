@@ -43,5 +43,15 @@ namespace PIC
         {
 
         }
+
+        public void DeleteOrganization(Organization organization)
+        {
+            organizations.RemoveAll(x => x.Id == organization.Id);
+        }
+
+        public void ChangeOrganization(Organization organization)
+        {
+
+        }
     }
 }

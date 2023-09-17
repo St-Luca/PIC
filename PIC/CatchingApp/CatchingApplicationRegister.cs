@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,7 +42,7 @@ namespace PIC
 
         public void DeleteCatchingApplication(CatchingApplication ca)
         {
-
+            applications.RemoveAll(x => x.Id == ca.Id);
         }
 
         public void ChangeCatchingApplication(CatchingApplication ca)

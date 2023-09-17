@@ -47,7 +47,7 @@ namespace PIC
 
         public void DeleteCapture(CaptureApplication delCapture)
         {
-
+            captures.RemoveAll(x => x.Id == delCapture.Id);
         }
 
         public void ChangeCapture(CaptureApplication changeCapture, CapturedAnimalCard captAnimal)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PIC
 {
-    internal class MunicipalContract
+    public class MunicipalContract
     {
         internal int Id { get; set; }
         internal DateTime ConclusionDate { get; set; }
@@ -19,7 +19,7 @@ namespace PIC
         double[] CoeffsForAnimal = new double[] { 0.5, 1, 2 };
 
         public MunicipalContract() { } //потом удалить, нужен для первичной инфраструктуры
-        public MunicipalContract(int number, DateTime start, DateTime end, Organization performer, Organization customer, double price)
+        public MunicipalContract(int number, DateTime start, DateTime end, Organization performer, Organization customer, List<Locality> localities, double price)
         {
 
             Id = number;
@@ -27,8 +27,21 @@ namespace PIC
             EffectiveDate = end;
             Performer = performer;
             Customer = customer;
+            Localities = localities;
             PriceForAnimal = price; //logic with coeffs for true price
 
+        }
+
+        public string[] GetStringData()
+        {
+            string[] result = new string[7];
+            result[0] = Id.ToString();
+            result[1] = ConclusionDate.ToString();
+            result[2] = EffectiveDate.ToString();
+            result[3] = Performer.ToString();
+            result[4] = Customer.ToString();
+            result[5] = "loc"; //////////todo: parse list locality to string
+            return result;
         }
     }
 }

@@ -40,6 +40,11 @@ namespace PIC
             return applications;
         }
 
+        public void AddCatchingApplication(CatchingApplication ca)
+        {
+            applications.Add(ca);
+        }
+
         public void DeleteCatchingApplication(CatchingApplication ca)
         {
             applications.RemoveAll(x => x.Id == ca.Id);

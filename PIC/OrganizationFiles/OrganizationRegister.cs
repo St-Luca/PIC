@@ -39,9 +39,9 @@ namespace PIC
             return organizations;
         }
 
-        public static void AddOrganization(Organization organization)
+        public void AddOrganization(Organization organization)
         {
-
+            organizations.Add(organization);
         }
 
         public void DeleteOrganization(Organization organization)

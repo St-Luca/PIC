@@ -12,14 +12,14 @@ namespace PIC
         int Id { get; set; }
         Animal Animal { get; set; }
         Locality Locality { get; set; }
-        int CaptureId { get; set; }
+        CaptureApplication Capture { get; set; }
 
-        public void CapturedAnimalRegister(int id, Animal animal, Locality locality, int captureId)
+        public void CapturedAnimalRegister(int id, Animal animal, Locality locality, CaptureApplication capture)
         {
             Id = id;
             Animal = animal;
             Locality = locality;
-            CaptureId = captureId;
+            Capture = capture;
         }
     }
 }

@@ -34,7 +34,7 @@ namespace PIC
             string password = PasswordTextBox.Text;
             User appUser = Authorize(login, password);
 
-            CatchingApplicationRegisterForm form1 = new CatchingApplicationRegisterForm(appUser);
+            MainForm form1 = new MainForm(appUser);
             form1.ShowDialog();
         }
     }

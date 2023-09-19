@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//using PIC.CatchingApp;
 
 namespace PIC
 {
@@ -15,9 +14,18 @@ namespace PIC
     {
         MunicipalContractRegister Register { get; set; }
         User User { get; set; }
-        public MunicipalContractRegisterForm()
+        public MunicipalContractRegisterForm(MunicipalContractRegister register, User user)
         {
             InitializeComponent();
+            Register = register;
+            User = user;
+
+            dataGridView1.AutoGenerateColumns = true;
+            foreach(MunicipalContract mc in register.GetUserFilter(User))
+            {
+                string[] munContr = mc.GetStringData();
+                dataGridView1.Rows.Add(munContr);
+            }
         }
 
         private bool CanAddMunicipalContract()
@@ -39,15 +47,15 @@ namespace PIC
 
         private void LoadMunContractRegisterButton_Click(object sender, EventArgs e)
         {
-            MunicipalContractRegister ca = new MunicipalContractRegister();
+            //MunicipalContractRegister ca = new MunicipalContractRegister();
             Dictionary<string, string> filter = new Dictionary<string, string>(); //здесь как то составляем словарь для фильтрации. Значения брать из элементов формы.
             Dictionary<string, string> sort = new Dictionary<string, string>(); //здесь как то составляем словарь для сортировки. Значения брать из элементов формы.
 
-            List<MunicipalContract> f1 = ca.LoadMunicipalContractRegister(filter, sort);
-            List<MunicipalContract> f2 = ca.GetUserFilter(User);
+            List<MunicipalContract> f1 = Register.LoadMunicipalContractRegister(filter, sort);
+            List<MunicipalContract> f2 = Register.GetUserFilter(User);
             List<MunicipalContract> finalFilter = MunicipalContractRegister.GetFinalFilter(f1, f2);
 
-            ca.LoadMunicipalContractRegister(finalFilter, sort);
+            Register.LoadMunicipalContractRegister(finalFilter, sort);
             //отображаем на форме этот са
         }
     }

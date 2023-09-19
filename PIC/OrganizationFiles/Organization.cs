@@ -27,5 +27,10 @@ namespace PIC
             OrgType = orgType;
             OrgAttribute = orgAttribute;
         }
+
+        public override string ToString()
+        {
+            return Id.ToString() + " " + OrgName + " " + INN + " " + KPP+ " "+ OrgAddress+" "+ OrgType+" "+OrgAttribute;
+        }
     }
 }

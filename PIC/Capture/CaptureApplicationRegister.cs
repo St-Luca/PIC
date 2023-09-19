@@ -42,7 +42,7 @@ namespace PIC
 
         public static void AddCapturedAnimal(CapturedAnimalCard captAnimal)
         {
-
+            //captures.Add(c);
         }
 
         public void DeleteCapture(CaptureApplication delCapture)

@@ -48,6 +48,7 @@
             изменениеToolStripMenuItem = new ToolStripMenuItem();
             удалениеToolStripMenuItem = new ToolStripMenuItem();
             отчетToolStripMenuItem = new ToolStripMenuItem();
+            организацииToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -56,12 +57,11 @@
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Dock = DockStyle.Bottom;
-            dataGridView1.Location = new Point(0, 34);
-            dataGridView1.Margin = new Padding(3, 2, 3, 2);
+            dataGridView1.Location = new Point(0, 46);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(700, 304);
+            dataGridView1.Size = new Size(800, 405);
             dataGridView1.TabIndex = 0;
             // 
             // реестрыToolStripMenuItem
@@ -72,130 +72,138 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Items.AddRange(new ToolStripItem[] { реестрыToolStripMenuItem1, добавлениеToolStripMenuItem, изменениеToolStripMenuItem, удалениеToolStripMenuItem, отчетToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(700, 24);
+            menuStrip1.Padding = new Padding(7, 3, 0, 3);
+            menuStrip1.Size = new Size(800, 30);
             menuStrip1.TabIndex = 3;
             menuStrip1.Text = "menuStrip1";
             // 
             // реестрыToolStripMenuItem1
             // 
-            реестрыToolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { контрактыToolStripMenuItem, заявкиToolStripMenuItem, актыToolStripMenuItem });
+            реестрыToolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { контрактыToolStripMenuItem, заявкиToolStripMenuItem, актыToolStripMenuItem, организацииToolStripMenuItem });
             реестрыToolStripMenuItem1.Name = "реестрыToolStripMenuItem1";
-            реестрыToolStripMenuItem1.Size = new Size(65, 20);
+            реестрыToolStripMenuItem1.Size = new Size(80, 24);
             реестрыToolStripMenuItem1.Text = "Реестры";
             // 
             // контрактыToolStripMenuItem
             // 
             контрактыToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { задатьСортировкуToolStripMenuItem, задатьФильтрToolStripMenuItem, поискToolStripMenuItem });
             контрактыToolStripMenuItem.Name = "контрактыToolStripMenuItem";
-            контрактыToolStripMenuItem.Size = new Size(133, 22);
+            контрактыToolStripMenuItem.Size = new Size(224, 26);
             контрактыToolStripMenuItem.Text = "Контракты";
+            контрактыToolStripMenuItem.Click += контрактыToolStripMenuItem_Click;
             // 
             // задатьСортировкуToolStripMenuItem
             // 
             задатьСортировкуToolStripMenuItem.Name = "задатьСортировкуToolStripMenuItem";
-            задатьСортировкуToolStripMenuItem.Size = new Size(177, 22);
+            задатьСортировкуToolStripMenuItem.Size = new Size(222, 26);
             задатьСортировкуToolStripMenuItem.Text = "Задать сортировку";
             // 
             // задатьФильтрToolStripMenuItem
             // 
             задатьФильтрToolStripMenuItem.Name = "задатьФильтрToolStripMenuItem";
-            задатьФильтрToolStripMenuItem.Size = new Size(177, 22);
+            задатьФильтрToolStripMenuItem.Size = new Size(222, 26);
             задатьФильтрToolStripMenuItem.Text = "Задать фильтр";
             // 
             // поискToolStripMenuItem
             // 
             поискToolStripMenuItem.Name = "поискToolStripMenuItem";
-            поискToolStripMenuItem.Size = new Size(177, 22);
+            поискToolStripMenuItem.Size = new Size(222, 26);
             поискToolStripMenuItem.Text = "Поиск";
             // 
             // заявкиToolStripMenuItem
             // 
             заявкиToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { задатьФильтрToolStripMenuItem1, задатьФильтрToolStripMenuItem2, поискToolStripMenuItem1 });
             заявкиToolStripMenuItem.Name = "заявкиToolStripMenuItem";
-            заявкиToolStripMenuItem.Size = new Size(133, 22);
+            заявкиToolStripMenuItem.Size = new Size(224, 26);
             заявкиToolStripMenuItem.Text = "Заявки";
             // 
             // задатьФильтрToolStripMenuItem1
             // 
             задатьФильтрToolStripMenuItem1.Name = "задатьФильтрToolStripMenuItem1";
-            задатьФильтрToolStripMenuItem1.Size = new Size(177, 22);
+            задатьФильтрToolStripMenuItem1.Size = new Size(222, 26);
             задатьФильтрToolStripMenuItem1.Text = "Задать сортировку";
             // 
             // задатьФильтрToolStripMenuItem2
             // 
             задатьФильтрToolStripMenuItem2.Name = "задатьФильтрToolStripMenuItem2";
-            задатьФильтрToolStripMenuItem2.Size = new Size(177, 22);
+            задатьФильтрToolStripMenuItem2.Size = new Size(222, 26);
             задатьФильтрToolStripMenuItem2.Text = "Задать фильтр";
             // 
             // поискToolStripMenuItem1
             // 
             поискToolStripMenuItem1.Name = "поискToolStripMenuItem1";
-            поискToolStripMenuItem1.Size = new Size(177, 22);
+            поискToolStripMenuItem1.Size = new Size(222, 26);
             поискToolStripMenuItem1.Text = "Поиск";
             // 
             // актыToolStripMenuItem
             // 
             актыToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { задатьСортировкуToolStripMenuItem1, задатьФильтрToolStripMenuItem3, поискToolStripMenuItem2 });
             актыToolStripMenuItem.Name = "актыToolStripMenuItem";
-            актыToolStripMenuItem.Size = new Size(133, 22);
+            актыToolStripMenuItem.Size = new Size(224, 26);
             актыToolStripMenuItem.Text = "Акты";
             // 
             // задатьСортировкуToolStripMenuItem1
             // 
             задатьСортировкуToolStripMenuItem1.Name = "задатьСортировкуToolStripMenuItem1";
-            задатьСортировкуToolStripMenuItem1.Size = new Size(177, 22);
+            задатьСортировкуToolStripMenuItem1.Size = new Size(222, 26);
             задатьСортировкуToolStripMenuItem1.Text = "Задать сортировку";
             // 
             // задатьФильтрToolStripMenuItem3
             // 
             задатьФильтрToolStripMenuItem3.Name = "задатьФильтрToolStripMenuItem3";
-            задатьФильтрToolStripMenuItem3.Size = new Size(177, 22);
+            задатьФильтрToolStripMenuItem3.Size = new Size(222, 26);
             задатьФильтрToolStripMenuItem3.Text = "Задать фильтр";
             // 
             // поискToolStripMenuItem2
             // 
             поискToolStripMenuItem2.Name = "поискToolStripMenuItem2";
-            поискToolStripMenuItem2.Size = new Size(177, 22);
+            поискToolStripMenuItem2.Size = new Size(222, 26);
             поискToolStripMenuItem2.Text = "Поиск";
             // 
             // добавлениеToolStripMenuItem
             // 
             добавлениеToolStripMenuItem.Name = "добавлениеToolStripMenuItem";
-            добавлениеToolStripMenuItem.Size = new Size(86, 20);
+            добавлениеToolStripMenuItem.Size = new Size(109, 24);
             добавлениеToolStripMenuItem.Text = "Добавление";
             // 
             // изменениеToolStripMenuItem
             // 
             изменениеToolStripMenuItem.Name = "изменениеToolStripMenuItem";
-            изменениеToolStripMenuItem.Size = new Size(81, 20);
+            изменениеToolStripMenuItem.Size = new Size(103, 24);
             изменениеToolStripMenuItem.Text = "Изменение";
             // 
             // удалениеToolStripMenuItem
             // 
             удалениеToolStripMenuItem.Name = "удалениеToolStripMenuItem";
-            удалениеToolStripMenuItem.Size = new Size(71, 20);
+            удалениеToolStripMenuItem.Size = new Size(90, 24);
             удалениеToolStripMenuItem.Text = "Удаление";
             // 
             // отчетToolStripMenuItem
             // 
             отчетToolStripMenuItem.Name = "отчетToolStripMenuItem";
-            отчетToolStripMenuItem.Size = new Size(51, 20);
+            отчетToolStripMenuItem.Size = new Size(62, 24);
             отчетToolStripMenuItem.Text = "Отчет";
+            // 
+            // организацииToolStripMenuItem
+            // 
+            организацииToolStripMenuItem.Name = "организацииToolStripMenuItem";
+            организацииToolStripMenuItem.Size = new Size(224, 26);
+            организацииToolStripMenuItem.Text = "Организации";
             // 
             // MainForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 338);
+            ClientSize = new Size(800, 451);
             Controls.Add(menuStrip1);
             Controls.Add(dataGridView1);
             MainMenuStrip = menuStrip1;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "MainForm";
-            Text = "Заявки на отлов";
+            Text = "Главное меню";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
@@ -225,5 +233,6 @@
         private ToolStripMenuItem изменениеToolStripMenuItem;
         private ToolStripMenuItem удалениеToolStripMenuItem;
         private ToolStripMenuItem отчетToolStripMenuItem;
+        private ToolStripMenuItem организацииToolStripMenuItem;
     }
 }

@@ -25,17 +25,20 @@ namespace PIC
             // if (passwordHash == 0 ) { } проверка словаря на налл, т е нет такого юзера
             User user = authController.CreateUser(userData);
 
-            return user; 
+            return user;
         }
 
         private void SignInButton_Click(object sender, EventArgs e)
         {
             string login = LoginTextBox.Text;
             string password = PasswordTextBox.Text;
-            User appUser = Authorize(login, password);
+            if(login!="" && password!="")
+            {
+                User appUser = Authorize(login, password);
 
-            MainForm form1 = new MainForm(appUser);
-            form1.ShowDialog();
+                MainForm form1 = new MainForm(appUser);
+                form1.Show();
+            }
         }
     }
 }

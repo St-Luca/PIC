@@ -42,7 +42,6 @@
             LoginTextBox.Name = "LoginTextBox";
             LoginTextBox.Size = new Size(278, 27);
             LoginTextBox.TabIndex = 1;
-            LoginTextBox.Text = "Введите логин";
             // 
             // PasswordTextBox
             // 
@@ -56,18 +55,18 @@
             label1.AutoSize = true;
             label1.Location = new Point(192, 222);
             label1.Name = "label1";
-            label1.Size = new Size(50, 20);
+            label1.Size = new Size(52, 20);
             label1.TabIndex = 3;
-            label1.Text = "label1";
+            label1.Text = "Логин";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Location = new Point(192, 280);
             label2.Name = "label2";
-            label2.Size = new Size(50, 20);
+            label2.Size = new Size(62, 20);
             label2.TabIndex = 4;
-            label2.Text = "label2";
+            label2.Text = "Пароль";
             // 
             // SignInButton
             // 
@@ -81,17 +80,21 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(278, 49);
+            richTextBox1.BorderStyle = BorderStyle.None;
+            richTextBox1.Enabled = false;
+            richTextBox1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            richTextBox1.Location = new Point(320, 46);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(278, 34);
+            richTextBox1.ReadOnly = true;
+            richTextBox1.Size = new Size(278, 57);
             richTextBox1.TabIndex = 6;
-            richTextBox1.Text = "";
+            richTextBox1.Text = "Авторизация";
             // 
             // AuthForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 451);
             Controls.Add(richTextBox1);
             Controls.Add(SignInButton);
             Controls.Add(label2);

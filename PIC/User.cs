@@ -12,7 +12,6 @@ namespace PIC
         string Login { get; set; }
         string Password { get; set; }
         Organization Organization { get; set; }
-
         public int PermissionCode { get; set; }
 
         public User(int id, string login, string password)
